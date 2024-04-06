@@ -1,0 +1,20 @@
+{% extends 'auto_app/base.html' %}
+{% block title  %}
+Главная страница сайта
+{% endblock  %}
+
+{% block content  %}
+    <h1>Главная страница</h1>
+    {% if cars  %}
+        {% for car in cars  %}
+            <div class="alert alert-warning mt-2 ">
+                <h3>Бренд:  {{ car.brand  }}</h3>
+                <p>Модель:  {{car.model }}</p>
+                <p>Год:  {{ car.year}}</p>
+                <h5>Цвет: {{ car.color  }}</h5>
+            </div>        
+        {% endfor  %}
+    {% else %}
+        <p>У нас нет записей! </p>
+    {% endif %}
+{% endblock  %}

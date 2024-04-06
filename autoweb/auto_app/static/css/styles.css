@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+
+    margin-top: 10px;
+    padding-top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+
+
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.law-firm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.description {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.description p {
+    font-size: 14px;
+}

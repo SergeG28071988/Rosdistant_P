@@ -1,0 +1,20 @@
+{% extends 'auto_app/base.html' %}
+
+{% block title  %}
+Добавить авто
+{% endblock  %}
+
+{% block content  %}
+   <h1>Создать авто</h1><br>
+   <form method="post">
+      {% csrf_token %}
+      {{ form.brand }}<br>
+      {{ form.model }}<br>
+      {{ form.year }}<br>
+      {{ form.color }}<br>
+
+      <button type="submit" class="btn btn-success">Добавить</button>
+      <span>{{ error }}</span>
+   </form>
+
+{% endblock  %}
